@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap"
+			rel="stylesheet"
+		/>
+</head>
+<body>
+
+    <header class="header">
+        <div class="header__texto">
+            <h2 class="no-margin">Encriptador de texto</h2>
+            <p class="no-margin">
+                Challenge #1 - Alura Latam
+            </p>
+        </div>
+    </header>
+    <div class="contenedor dos--columnas">
+        <article class="secciones-blog">
+            <h1 class="centrar-texto">Ingrese su mensaje</h1>
+            <form class="formulario">
+                <div class="campo">
+                    <textarea 
+                        class="campo__field campo__field--textarea"
+                        id="mensaje"
+                    ></textarea>
+                </div>
+                <div class="contenedor dos--columnas">
+                    <div class="campo">
+                        <input type="submit" id="Encriptar" value="Encriptar" class="boton boton--primario">
+                    </div>
+                    <div class="campo">
+                        <input type="submit" id="Desencriptar" value="Desencriptar" class="boton boton--secundario">
+                    </div>
+                </div>
+            </form>
+            
+            
+        </article>
+        <article class="secciones-blog">
+            <h1 class="centrar-texto">Su traducción</h1>
+            <p class="parrafo"></p>
+        </article>
+    </div>
+    <footer>
+        <div class="contendor">
+            <h4 class="centrar-texto">Desarrollado por: Willian Rueda</h4>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,160 @@
+:root {
+	--FuenteHeading: "PT Sans", sans-serif;
+	--FuenteParrafos: "Open Sans", sans-serif;
+
+	--primario: #180583;
+    --secundario:#969696;
+	--gris: #e1e1e1;
+	--blanco: #ffffff;
+	--negro: #000000;
+}
+
+html {
+	box-sizing: border-box;
+	font-size: 62.5%;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+
+body {
+	font-family: var(--FuenteParrafos);
+	font-size: 1.6rem;
+	line-height: 2;
+}
+
+/* Globales */
+
+.contenedor {
+	max-width: 120rem;
+	width: 90%;
+	/* width: min(90%, 120rem); */
+	margin: 0 auto;
+}
+
+h1,
+h2,
+h3,
+h4 {
+	font-family: var(--FuenteHeading);
+	line-height: 1.2;
+}
+
+h1 {
+	font-size: 4.8rem;
+}
+
+h2 {
+	font-size: 4rem;
+}
+
+h3 {
+	font-size: 3.2rem;
+}
+
+h4 {
+	font-size: 2.8rem;
+}
+
+/* utilidades */
+
+.no-margin {
+	margin: 0;
+}
+.no-padding {
+	padding: 0;
+}
+.centrar-texto {
+	text-align: center;
+}
+
+/* Header */
+.header {
+	background-image: url(../img/banner.jpg);
+	height: 20rem;
+	background-size: cover;
+	background-repeat: repeat;
+	background-position: center center;
+}
+
+.header__texto {
+	text-align: center;
+	color: var(--blanco);
+    padding-top: 5rem;	
+}
+
+
+.formulario {
+    background-color: var(--gris);
+    width: 100%;
+    padding: 5rem;
+}
+
+.campo {
+    display: flex;
+    margin-bottom: 2rem;
+}
+
+
+.campo__field {
+    flex: 1;
+    border: 1px solid var(--gris);
+}
+
+.campo__field--textarea {
+    height: 50rem;
+}
+
+@media (min-width: 768px) {
+    .dos--columnas{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        column-gap: 5rem;
+    }
+ }
+
+ .boton {
+    display: block;
+    font-family: var(--fuenteHeading);
+    color: var(--blanco);
+    text-align: center;
+    padding: 1rem 3rem;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    border: none;
+}
+
+@media (min-width: 768px) {
+    .boton {
+        display: inline-block;
+
+    }
+}
+.boton:hover {
+    cursor: pointer;
+}
+.boton--primario {
+    background-color: var(--primario);
+}
+.boton--secundario {
+    background-color: var(--secundario);
+}
+
+.secciones-blog{
+    background-color: var(--gris);
+    margin-top: 5rem;
+}
+
+.parrafo{
+    margin-top: 10rem;
+    padding: 5rem;
+    font-family: var(--fuenteHeading);
+    color: var(--negro);
+    text-align: center;
+    background-color: var(--blanco) ;
+}
